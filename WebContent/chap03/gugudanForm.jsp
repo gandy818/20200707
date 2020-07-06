@@ -16,7 +16,7 @@
 <h1>구구단 보기</h1>
 <form action="gugudanResult.jsp">
 <input type="text" name="number"/>단
-<input type="submit" value="보기" />
+<input type="submit" value="보기!" />
 </form>
 </body>
 </html>
