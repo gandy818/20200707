@@ -3,7 +3,7 @@
 <%--응답 myHeader 안에 java라는 값을 입력 --%>
 <%
 response.setHeader("myHeader","java");
-%>    
+%>     
 
 <!DOCTYPE html>
 <html>

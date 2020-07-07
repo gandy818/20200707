@@ -18,6 +18,4 @@ if(login){
 	response.sendRedirect("home.jsp?id=" + qname); //파라미터 값 추가
 }else {
 	response.sendRedirect("login.jsp");
-}
-
-%>
+} 
