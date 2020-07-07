@@ -1,8 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import = "java.util.Enumeration" %>
 <!DOCTYPE html>
-<html>
+<html> 
 <head>
 <meta charset="UTF-8">
 <meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -14,15 +13,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%
-	Enumeration headerEnum = request.getHeaderNames();
-	while(headerEnum.hasMoreElements()){
-	String headerName = (String)headerEnum.nextElement();
-	String headerValue = request.getHeader(headerName);
-%>
-	<%=headerName %> = <%=headerValue %><br>
-<%
-}
-%>	
+<form action="loginProcess.jsp" method="post">
+이름: <input type ="text" name="id" /> <br />
+pw: <input type="password" name="pw"> <br />
+<input type="submit" value="로그인">
+
+</form>
 </body>
 </html>
